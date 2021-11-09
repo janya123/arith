@@ -1,0 +1,49 @@
+/**********************************************************
+* HW4 : arith
+* Comp40
+* Written by: Kenny Lin (klin04) and Janya Gambhir (jgambh01)
+*         on: 3/22/2021
+*********************************************************/
+
+===============
+Program Architecture
+
+40image.c 
+    Reads the command line arguments and either calls the compress or decompress
+    functions
+
+compress40.c / compress40.h
+    Runs the compression and decompression processes. Reads either uncompressed
+    or compressed images and outputs compressed and decompressed images. 
+    
+convert40.c / convert40.h
+    Functions for converting between the different pixel representations (i.e 
+    component-video, discrete cosine transformation, quantized dct) used during
+    compression and decompression 
+
+bitpack.c / bitpack.h 
+    Functions for packing and retrieving values to and from words 
+
+pack40.c / pack40.h 
+    Functions for unpacking values from the words into the quantized dct space
+    
+math40.c / math40.h
+    Functions for performing math operations (i.e rounding) on floats 
+
+
+===============
+Acknowledgements: 
+
+TA's : Max, Sejal, Liana
+
+===============
+Implementation Correctness: 
+
+All parts of compression and decompression have been correctly implemented.
+
+===============
+Time Spent:
+
+Time Spent Analyzing the Problem : 12 hours
+Time Spent Solving the Problem : 27 hours
+
